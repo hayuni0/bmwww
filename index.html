@@ -14,53 +14,52 @@
   </script>
 
   <style>
+  body{margin:20;}
+  h2{color:navy;}
+
   a {
-    color:grey;text-decoration:none
+    text-decoration:none;
+  }
+  h1 { font-size:60px;
+      text-align: center;
+      border-bottom:1px solid navy;
+      margin:0;
+      padding:20px;
+
+  }
+  ul{border-right:1px solid navy;
+    width:100px;
+    margin:0;
+    padding:20px;
+  }
+  #grid{
+    display: grid;
+    grid-template-columns: 180px 1fr;
+  }
+  #article{padding-left:5px}
+  ul{padding-left:30px;}
+  @media(max-width:800px){
+    #grid{
+      display: block;
+    }
+    ul{border-right:none;}
+    h1{border-bottom:none;}
   }
   </style>
   </head>
   <body>
-  <h1><a href="index.html">BMW</a></h1>
-  <ul>
-    <li><a href="x5.html">X5</a></li>
-    <li><a href="x6.html"
-      style="color:navy;text-decoration:underline;">X6</a></li>
-    <li><a href="x7.html">X7</a></li>
-  </ul>
-  <!--
-  <ul>
-    <li><a href="x5.html">X5</a></li>
-    <li><a href="x6.html">X6</a></li>
-    <li><a href="x7.html">X7</a></li>
-  </ul>
-  -->
-  <h2>BMW SAV</h2>
-    <img src="x5 m50d.jpg" width="100%"><p> <strong>ports avtivity vehicle</strong>의 약자로 suv 차량중에서도 스포티한 느낌을 중점으로 최대한 살린 차량을 의미합니다. bmw의 suv들이 이런 성향을 가지며 기업 역시 <strong>SAV</strong> 이미지에 맞는 기술을 꾸준히 개발하고 있습니다. 그중에서도 최고라 말할 수 있는 3가지 종류의 차량을 만나보겠습니다.</p>
-
-
-    <p>
-      <div id="disqus_thread"></div>
-      <script>
-
-      /**
-      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-      *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-      /*
-      var disqus_config = function () {
-      this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-      this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-      };
-      */
-      (function() { // DON'T EDIT BELOW THIS LINE
-      var d = document, s = d.createElement('script');
-      s.src = 'https://bmw-3.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
-      })();
-      </script>
-      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
-    </p>
-
+  <h1><a href="index.html"style="color:navy;">BMW</a></h1>
+  <div id="grid">
+      <ul>
+        <li><a href="x5.html" style="color:navy;">X5</a></li>
+        <li><a href="x6.html"
+          style="color:navy;">X6</a></li>
+        <li><a href="x7.html"style="color:navy;">X7</a></li>
+      </ul>
+      <div id="artcle">
+    <div>
+      <h2>BMW SAV</h2>
+        <img src="x5 m50d.jpg" width="100%"><p> <strong>sports avtivity vehicle</strong>의 약자로 suv 차량중에서도 스포티한 느낌을 중점으로 최대한 살린 차량을 의미합니다. bmw의 suv들이 이런 성향을 가지며 기업 역시 <strong>SAV</strong> 이미지에 맞는 기술을 꾸준히 개발하고 있습니다. 그중에서도 최고라 말할 수 있는 3가지 종류의 차량을 만나보겠습니다.</p>
+  </div>
 </body>
 </html>

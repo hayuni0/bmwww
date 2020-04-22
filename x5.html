@@ -13,24 +13,55 @@
   gtag('config', 'UA-164154161-1');
 </script>
 <style>
+body{margin:20;}
+  h2{color:grey;}
   a {
-    color:grey;
+    color:grey;text-decoration:none;
   }
+  h1 { font-size:60px;
+      text-align: center;
+      border-bottom:1px solid grey;
+      margin:0;
+      padding:20px;
+    }
+
+    ul{border-right:1px solid grey;
+      width:100px;
+      margin:0;
+      padding:20px;
+    }
+    #grid{
+      display: grid;
+      grid-template-columns: 180px 1fr;
+    }
+    #article{padding-left:5px}
+    ul{padding-left:30px;}
+    @media(max-width:800px){
+      #grid{
+        display: block;
+      }
+      ul{border-right:none;}
+      h1{border-bottom:none;}
+    }
 </style>
 </head>
 <body>
   <h1><a href="index.html">BMW</a></h1>
+<div id="grid">
   <ul>
     <li><a href="x5.html">X5</a></li>
     <li><a href="x6.html">X6</a></li>
     <li><a href="x7.html">X7</a></li>
   </ul>
+<div id="artcle">
+<div>
   <h2>BMW X5</h2>
   <img src="x5.jpg" width="100%"><p><strong><u>BMW</u> X5</strong>의 강력하고 우아한 카리스마에 모든 이들의 이목이 집중됩니다. 거대한 더블 키드니 그릴이 <a href="https://www.bmw.co.kr/ko/all-models/x-range/X5/2018/at-a-glance.html" target="_blank" title="bmw x5">BMW X5</a>의 강렬한 시작을 알리고, 정교하게 설계된 헤드라이트의 X 디자인이 독보적인 존재감을 부각시킵니다. 혁신적인 기술은 어떠한 도로 상황에서도 안전한 주행과 최상의 드라이빙 다이내믹스를 보장합니다.</p>
   <h2> x5 m50d 시승기</h2>
 <p>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/GJF0gN6h9ms" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </p>
+</div>
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
